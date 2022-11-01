@@ -28,10 +28,10 @@ public class MemoryMemberRepositoryTest {
         repository.save(member1);
 
         Member member2 = new Member();
-        member2.setName("spring1");
+        member2.setName("spring2");
         repository.save(member2);
 
-        Member result = repository.findByName("spring1").get();
+        Member result = repository.findByName("spring2").get();
 
         assertThat(result).isEqualTo(member1);
 
